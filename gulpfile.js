@@ -1,10 +1,12 @@
-import { src, dest, task } from 'gulp';
-import sass from 'gulp-sass';
+
+var gulp = require ('gulp');
+var sass = require ('gulp-sass');
 
 function compilaSass(){
-    return src('css/scss/*.scss')
+    return gulp
+    .src('css/scss/*.scss')
     .pipe(sass())
-    .pipe(dest('css/'))
+    .pipe(gulp.dest('css/'))
 }
 
-task('sass', compilaSass);
+gulp.task('sass', compilaSass);
