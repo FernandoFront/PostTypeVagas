@@ -117,7 +117,10 @@
     }
 }
 
-
+form{
+    display: flex;
+    flex-direction: column;
+}
 /*Footer*/
 .footer {
     width: 100%;
@@ -128,6 +131,7 @@
     align-items: center;
     justify-content: center;
     height: 10rem;
+    flex-direction: column;
 
     p{
         font: 400 1rem 'Open Sans', sans-serif !important;
