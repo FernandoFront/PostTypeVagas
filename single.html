@@ -23,11 +23,11 @@
                 <!--Form pesquisa-->
                     <section class="introducao-interna interna_portfolio">
                         <div class="container">
-                            <h1 data-anime="400" class="fadeInDown">Titulo Vaga</h1>
-                            <p data-anime="800" class="fadeInDown">Podemos já vislumbrar o modo pelo qual o fenômeno da Internet facilita a criação dos procedimentos normalmente adotados.</p>
+                            <h1 data-anime="400" class="uk-animation-fade">Titulo Vaga</h1>
+                            <p data-anime="800" class="uk-animation-fade">Podemos já vislumbrar o modo pelo qual o fenômeno da Internet facilita a criação dos procedimentos normalmente adotados.</p>
                         </div>
                     </section>
-                    <form class="cadastro_vaga">
+                    <form class="cadastro_vaga uk-animation-scale-down">
                         <fieldset class="uk-fieldset">
                     
                             <legend class="uk-legend">Cadastre-se</legend>
@@ -54,8 +54,8 @@
                                     <input class="uk-input uk-form-width-medium"  type="text" placeholder="Curriculo" disabled uk-icon="icon:file-pdf">
                                 </div>
                             </div>
-                            <div class="menu uk-margin">
-                                 <a data-anime="1200" href="cadastrar.html" class="btn btn-interno">Candidatar-se</a> 
+                            <div class="menu uk-margin uk-flex-center">
+                                 <a data-anime="1200" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Parabéns! Você candidatou a essa vaga.'})" class="btn btn_interno">Candidatar-se</a> 
                              </div>   
                         </fieldset>
                     </form> 

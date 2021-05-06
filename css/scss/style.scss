@@ -38,6 +38,7 @@
         &:hover {
             color: $cor_base;
             border-color: $cor_base;
+            transition: 0.6ms;
         }
     }
 
@@ -98,6 +99,7 @@
     }
     
 }
+
 .vaga{
     border: 3px solid $yellow_low;
     width: 100%;
@@ -106,6 +108,7 @@
     margin-top: 20px;
     &:hover{
         background-color: $yellow_low;
+        transform: translate3d(0, -5px, 0);
     }
     img{
         padding: 10px;
@@ -115,6 +118,8 @@
     div{
         text-align: left;
         max-height: 120px;
+        padding: 0;
+        margin-right: 20px;
         h1{
         font: 600 2rem 'Open Sans', sans-serif !important;
         margin: 0 !important;
