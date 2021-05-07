@@ -56,9 +56,9 @@ $ git clone -b frontend --single-branch https://github.com/FernandoFront/PostTyp
 
 Follow the steps below
 ```bash
-instal dependeces
+#instal dependeces
 npm i
-```bash
+```
 <p align="center">Projected by Fernando Saraiva with 🖤</p>
 <p align="center">Readme inspired by Rafael Menegon </p>
 
