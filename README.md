@@ -1,7 +1,7 @@
 
 
 <h1 align="center">
-    PostTypeVagas
+    FindWork
 </h1>
 
 <p>Buscador de vagas em Wordpress e PHP</p> 
