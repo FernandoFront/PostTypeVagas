@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%; } }
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%; } }
+
+body, input, textarea, button {
+  font: 400 1rem 'Open Sans', sans-serif !important;
+  color: #313131; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif !important;
+  color: #313131; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+button {
+  cursor: pointer; }
+
+a {
+  text-decoration: none !important; }
+
+ol, ul {
+  list-style: none; }
+
+  .interna h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; }
+  .interna h1:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 6px auto 10px auto; }
+  .interna p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff; }
+
+.cadastro_vaga {
+  width: 50%;
+  padding: 60px;
+  align-self: center;
+  background-color: #FFD900;
+  margin: 60px;
+  border-radius: 15px;
+  text-align: center; }
+  .cadastro_vaga legend {
+    color: #fff; }
+  .cadastro_vaga input, .cadastro_vaga select, .cadastro_vaga textarea {
+    border-radius: 10px; }
+
+/*Header*/
+.menu {
+  background: #FFD900 !important;
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row; }
+  .menu .btn {
+    border: 3px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 1rem;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .1em; }
+    .menu .btn:hover {
+      color: #313131;
+      border-color: #313131; }
+
+.btn.btn_interno {
+  color: #313131;
+  border: none;
+  background-color: #fff; }
+  .btn.btn_interno:hover {
+    color: #FFD900;
+    border-color: #FFD900;
+    transition: 0.6ms; }
+
+/*Main*/
+.main_content {
+  display: flex;
+  flex-direction: row; }
+
+.main_content_single {
+  display: flex;
+  flex-direction: column; }
+
+/*Asside*/
+.filtro {
+  background: #FFF9D4;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding: 1rem;
+  color: #313131;
+  width: 25%;
+  padding-top: 60px; }
+  .filtro li {
+    border: 3px solid #FFD900;
+    padding: 10px;
+    color: #313131 !important;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+    margin-bottom: 10px; }
+    .filtro li:active, .filtro li :focus, .filtro li :hover {
+      background-color: transparent;
+      color: #FFD900; }
+
+/*Vagas*/
+.container {
+  margin-left: 20px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+
+.search {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 3px solid #FFD900;
+  border-radius: 20px; }
+  .search input {
+    border-radius: 15px;
+    color: #313131; }
+
+.vaga {
+  border: 3px solid #FFF9D4;
+  width: 100%;
+  border-radius: 15px;
+  height: auto;
+  margin-top: 20px; }
+  .vaga:hover {
+    background-color: #FFF9D4;
+    transform: translate3d(0, -5px, 0); }
+  .vaga img {
+    padding: 10px;
+    max-width: 100%;
+    height: 120px; }
+  .vaga div {
+    text-align: left;
+    max-height: 120px;
+    padding: 0;
+    margin-right: 20px; }
+    .vaga div h1 {
+      font: 600 2rem 'Open Sans', sans-serif !important;
+      margin: 0 !important; }
+    .vaga div h3 {
+      font: 200 1.5rem 'Open Sans', sans-serif !important;
+      margin: 0 !important; }
+    .vaga div p {
+      font: 400 1rem 'Open Sans', sans-serif !important;
+      margin-top: .8rem !important; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+
+.introducao-interna {
+  width: 100%; }
+
+/*Footer*/
+.footer {
+  width: 100%;
+  background: #313131;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  flex-direction: column; }
+  .footer p {
+    font: 400 1rem 'Open Sans', sans-serif !important; }
