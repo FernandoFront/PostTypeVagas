@@ -4,7 +4,7 @@
     FindWork
 </h1>
 
-<p>Buscador de vagas em Wordpress e PHP</p> 
+<p>Finder of work vacancy in Wordpress e PHP</p> 
 
 <p align="center">
   <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
