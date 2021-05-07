@@ -21,14 +21,14 @@ This project was developed using the following technologies:
 - [PHP 7.3.5](https://www.php.net/releases/7_3_5.php/)
 - [Nginx](nginx.com)
 - [Wordpress](https://www.wordpress.org//)
-- [MySql](https://www.mysql.com/)
+- [UiKit](https://getuikit.com/)
 
 ## 🚀 Getting started
 
 Clone the project and access the folder
 
 ```bash
-$ git clone https://github.com/FernandoFront/PostTypeVagas && cd PostTypevagas
+$ git clone https://github.com/FernandoFront/PostTypeVagas.git && cd PostTypevagas
 ```
 
 Follow the steps below
@@ -41,7 +41,7 @@ in case to use XAMPP SERVER you need download [WORPRESS](https://wordpress.org/)
 
 ## 💻 Project
     It is a FinderWork job search engine for Wordpress, the template was developed entirely using HTML, CSS and UIKIT framework.
-## 🔖 Layout
+## 🔖 Layout and Front-end
 
 You can view the project layout through the links below:
 
@@ -49,7 +49,17 @@ You can view the project layout through the links below:
 
 Remembering that you need to have a [Figma](http://figma.com/) account to access it.
 
+You can view the code Front-End in branch Front-End
+```bash
+$ git clone -b frontend --single-branch https://github.com/FernandoFront/PostTypeVagas.git
+```
+
+Follow the steps below
+```bash
+instal dependeces
+npm i
 --
+
 <p align="center">Projected by Fernando Saraiva with 🖤</p>
 <p align="center">Readme inspired by Rafael Menegon </p>
 
