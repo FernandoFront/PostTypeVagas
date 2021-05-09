@@ -6,8 +6,7 @@ get_header();
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="main_content_single">
 
-        <div class="wp-block-contact-form-7-contact-form-selector"><?php echo do_shortcode("[contact-form-7 id="27" title="Cadastrar Vaga"])"?></div>
-        <?php echo do_shortcode("SHORTCODE GOES HERE"); ?>
+        <div class="wp-block-contact-form-7-contact-form-selector"><?php echo do_shortcode('[contact-form-7 id="58" title="Cadidatar-se"]')?></div>
            
                     <!-- <form class="cadastro_vaga uk-animation-scale-down">
                         <fieldset class="uk-fieldset">

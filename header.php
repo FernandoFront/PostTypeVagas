@@ -7,9 +7,9 @@
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/css/uikit.min.css"/>
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/uikit/dist/css/uikit.min.css"/>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css"> 
         <!-- Header php -->
         <?php wp_head(); ?>
     </head>

@@ -63,7 +63,12 @@ ol, ul {
   .cadastro_vaga legend {
     color: #fff; }
   .cadastro_vaga input, .cadastro_vaga select, .cadastro_vaga textarea {
-    border-radius: 10px; }
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+   }
+
 
 /*Header*/
 .menu {

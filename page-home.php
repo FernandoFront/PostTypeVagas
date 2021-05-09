@@ -9,9 +9,9 @@ get_header();
                     <ul class="uk-flex uk-flex-column uk-text-center uk-subnav uk-subnav-pill">
                         <h3><?php the_field('titulo_categorias');?></h3>
                         <li class="uk-active" uk-filter-control><a href="#">Todas</a></li>
-                        <li uk-filter-control=".tag-dsn"><a href="#"><?php the_field('categoria');?></a></li>
-                        <li uk-filter-control=".tag-dev"><a href="#"><?php the_field('categoria');?></a></li>
-                        <li uk-filter-control=".tag-midia"><a href="#"><?php the_field('categoria');?></a></li>
+                        <li uk-filter-control=".<?php the_field('categoria')?>"><a href="#"><?php the_field('categoria');?></a></li>
+                        <li uk-filter-control=".<?php the_field('categoria')?>"><a href="#"><?php the_field('categoria');?></a></li>
+                        <li uk-filter-control=".<?php the_field('categoria')?>"><a href="#"><?php the_field('categoria');?></a></li>
                     </ul>
                 </asside>
                 <!--fim filtro lateral-->
@@ -27,15 +27,21 @@ get_header();
                     <!--Fim Form pesquisa-->
 
                     <!--Toogle vaga--> 
-                    <ul class="js-filter uk-switcher switcher_container uk-flex uk-margin">
-                        <li class="uk-margin uk-flex-column">
-                            <?php include(TEMPLATEPATH . "/inc/vaga.php"); ?>   
-                        </li> 
+                    <?php
+                        $args = array (
+                            'post_type' => 'vagas',
+                            'order'   => 'ASC'
+                        );
+                        $the_query = new WP_Query ( $args );
+                    ?>
 
-                        <li>
-                            <?php include(TEMPLATEPATH . "/inc/vaga.php"); ?> 
-                        </li> 
-                </ul>  
+                    <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                        <ul class="js-filter uk-switcher switcher_container uk-flex uk-margin">
+                            <li class="uk-margin uk-flex-column">
+                                <?php include(TEMPLATEPATH . "/inc/vaga.php"); ?>   
+                            </li> 
+                        </ul>  
+                    <?php endwhile; else: endif; ?>
 
                     <ul class="uk-subnav uk-subnav-pill" uk-switcher="connect: .switcher_container">
                         <li><a href="#">01</a></li>
