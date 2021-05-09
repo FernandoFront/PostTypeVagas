@@ -8,7 +8,7 @@ function findwork_js() {
 
 	wp_enqueue_script( 'uikitjs-icons' );
  }
- add_action( 'wp_enqueue_scripts', 'findwork_js' );
+ add_action( 'wp_enqueue_script', 'findwork_js' );
  
 // CSS
  function findwork_css() {
@@ -17,7 +17,7 @@ function findwork_js() {
 
 	wp_enqueue_script( 'uikitcss', 'style' );
  }
- add_action( 'wp_enqueue_scripts', 'findwork_css' );
+ add_action( 'wp_enqueue_script', 'findwork_css' );
 
  // Fontes
  function findwork_fonts() {
@@ -25,7 +25,7 @@ function findwork_js() {
 
 	wp_enqueue_script( 'font' );
  }
- add_action( 'wp_enqueue_scripts', 'findwork_fonts' );
+ add_action( 'wp_enqueue_script', 'findwork_fonts' );
 
 // Clean header
 remove_action('wp_head', 'rsd_link');
@@ -83,5 +83,4 @@ function custom_post_type_vagas() {
 	));
 }
 add_action('init', 'custom_post_type_vagas');
-
 ?>
