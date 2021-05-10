@@ -52,7 +52,7 @@ add_action('after_setup_theme', 'my_custom_sizes');
 // Custom Post Type
 
 function custom_post_type_vagas() {
-	register_post_type('Vagas', array(
+	register_post_type('vagas', array(
 		'label' => 'Vagas',
 		'description' => 'Vaga',
 		'public' => true,
@@ -66,9 +66,9 @@ function custom_post_type_vagas() {
 		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
 
 		'labels' => array (
-			'name' => 'Vagas',
-			'singular_name' => 'Vaga',
-			'menu_name' => 'Vagas',
+			'name' => 'vagas',
+			'singular_name' => 'vaga',
+			'menu_name' => 'vagas',
 			'add_new' => 'Adicionar Novo',
 			'add_new_item' => 'Adicionar Nova Vaga',
 			'edit' => 'Editar',
@@ -83,4 +83,19 @@ function custom_post_type_vagas() {
 	));
 }
 add_action('init', 'custom_post_type_vagas');
+
+// Create taxonomy for filter
+
+function create_custom_tax_categ(){
+    $custom_tax_nome = 'categoria';
+    $custom_post_type_nome = 'vagas';
+    $args = array(
+        'label' => __('categoria da Vaga'),
+        'hierarchical' => true,
+        'rewrite' => array('slug' => 'categ')
+    );
+    register_taxonomy( $custom_tax_nome, $custom_post_type_nome, $args );
+}
+
+	add_action( 'init', 'create_custom_tax_categ' );
 ?>
